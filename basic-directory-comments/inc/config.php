@@ -11,7 +11,7 @@ try {
     // create PDO connection
     $db = new PDO("sqlite:".__DIR__."/database.db");
     // set error mode
-    $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+    $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);    // throw exceptions
 } catch(PDOException $e) {
     //show error
     echo '<p class="bg-danger">'.$e->getMessage().'</p>';

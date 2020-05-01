@@ -1,4 +1,8 @@
 <?php
+
+// This script includes DocBlocks
+// https://docs.phpdoc.org/latest/guides/docblocks.html
+
 /**
  * The main application file
  *
@@ -23,9 +27,17 @@
  * @link      https://teamtreehouse.com/library/extending-objectoriented-php
  */
 
+class Collection
+{
+
     // statuses used for listings, form drop down and db selection order
+    private $statuses = array();
+    
     // database connection passed on construction
+    private $db;
+
     // collection array of listing objects
+    
 
     /**
      * Collection constructor.
@@ -36,7 +48,7 @@
     /**
      * Select listings from the database
      *
-     * @param array $filter Associtive array of columns and values to filter
+     * @param array $filter Associative array of columns and values to filter
      *
      * @return bool If listing inserted true/false
      */
@@ -154,3 +166,4 @@
         // retrieve all session alerts
         // clear session alerts
         // return retrieved alerts
+}

@@ -3,6 +3,7 @@
  * Website home page
  */
 // include config file
+include("inc/config.php");
 
 // add a default $filter array. This is an associative array of field => values to filter the data
 // if a status has been passed in the URI, set the filter status to the passed value.
@@ -13,8 +14,12 @@
 // set the $title variable for the page header
 
 // include the header file
+// include("inc/header.php");
 
 // loop through the listings to create a $listing variable
     // include the file from the views folder for creating individual listing
 
 // include the footer file
+// include("inc/footer.php");
+
+?>
